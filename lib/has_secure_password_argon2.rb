@@ -19,7 +19,7 @@ module HasSecurePasswordArgon2
 
   module ClassMethods
     def has_secure_password(**options)
-      super options
+      super **options
       include InstanceMethodsOnActivation
     end
   end
